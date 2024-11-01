@@ -1,0 +1,98 @@
+entity_a_id,entity_a_source,entity_b_id,entity_b_source,Cannonical_Name,type,entity_a_name,entity_b_name,relation_type
+entity_44,OC-ORACLE,entity_95,OC-MYSQL,Customer,Parent,CUSTOMERS,CUSTOMERS,inter_sub_typed
+entity_44,OC-ORACLE,entity_163,OC-SAP,Customer,Parent,CUSTOMERS,CUSTOMER,inter_sub_typed
+entity_95,OC-MYSQL,entity_163,OC-SAP,Customer,Parent,CUSTOMERS,CUSTOMER,inter_sub_typed
+entity_45,OC-ORACLE,entity_96,OC-MYSQL,Customer ID,Child,CUSTOMER ID,CUSTOMER NUMBER,inter_identical
+entity_45,OC-ORACLE,entity_164,OC-SAP,Customer ID,Child,CUSTOMER ID,CUSTOMER ID,inter_identical
+entity_96,OC-MYSQL,entity_164,OC-SAP,Customer ID,Child,CUSTOMER NUMBER,CUSTOMER ID,inter_identical
+entity_47,OC-ORACLE,entity_98,OC-MYSQL,Customer Full Name,Child,FULL NAME,CONTACT LASTNAME,inter_sub_typed
+entity_47,OC-ORACLE,entity_99,OC-MYSQL,Customer Full Name,Child,FULL NAME,CONTACT FIRST NAME,inter_sub_typed
+entity_97,OC-MYSQL,entity_168,OC-SAP,Customer Coporate Name,Child,CUSTOMER NAME,CUSTOMER,inter_identical
+entity_103,OC-MYSQL,entity_169,OC-SAP,Customer City,Child,CITY,CITY NAME,inter_identical
+entity_106,OC-MYSQL,entity_170,OC-SAP,Customer Country,Child,COUNTRY,COUNTRY NAME,inter_identical
+entity_46,OC-ORACLE,entity_100,OC-MYSQL,Customer Contact,Child,EMAIL ADDRESS,PHONE,inter_sub_typed
+entity_44,OC-ORACLE,entity_76,OC-ORACLE,Customer Satelite Join Shipment,Parent,CUSTOMERS,SHIPMENTS,intra_joined
+entity_45,OC-ORACLE,entity_79,OC-ORACLE,Customer Satelite Join Shipment Child,Child,CUSTOMER ID,CUSTOMER ID,intra_joined
+entity_80,OC-ORACLE,entity_101,OC-MYSQL,Customer Address,Child,DELIVERY ADDRESS,ADDRESS LINE 1,inter_sub_typed
+entity_80,OC-ORACLE,entity_102,OC-MYSQL,Customer Address,Child,DELIVERY ADDRESS,ADDRESS LINE 2,inter_sub_typed
+entity_80,OC-ORACLE,entity_103,OC-MYSQL,Customer Address,Child,DELIVERY ADDRESS,CITY,inter_sub_typed
+entity_80,OC-ORACLE,entity_104,OC-MYSQL,Customer Address,Child,DELIVERY ADDRESS,STATE,inter_sub_typed
+entity_80,OC-ORACLE,entity_105,OC-MYSQL,Customer Address,Child,DELIVERY ADDRESS,POSTAL CODE,inter_sub_typed
+entity_80,OC-ORACLE,entity_106,OC-MYSQL,Customer Address,Child,DELIVERY ADDRESS,COUNTRY,inter_sub_typed
+entity_66,OC-ORACLE,entity_152,OC-MYSQL,Products,Parent,PRODUCTS,PRODUCTS,inter_sub_typed
+entity_66,OC-ORACLE,entity_172,OC-SAP,Products,Parent,PRODUCTS,PRODUCT,inter_sub_typed
+entity_152,OC-MYSQL,entity_172,OC-SAP,Products,Parent,PRODUCTS,PRODUCT,inter_sub_typed
+entity_67,OC-ORACLE,entity_153,OC-MYSQL,Product ID,Child,PRODUCT ID,PRODUCT CODE,inter_identical
+entity_67,OC-ORACLE,entity_173,OC-SAP,Product ID,Child,PRODUCT ID,PRODUCT ID,inter_identical
+entity_153,OC-MYSQL,entity_173,OC-SAP,Product ID,Child,PRODUCT CODE,PRODUCT ID,inter_identical
+entity_68,OC-ORACLE,entity_154,OC-MYSQL,Product Name,Child,PRODUCT NAME,PRODUCT NAME,inter_identical
+entity_68,OC-ORACLE,entity_176,OC-SAP,Product Name,Child,PRODUCT NAME,PRODUCT NAME,inter_identical
+entity_154,OC-MYSQL,entity_176,OC-SAP,Product Name,Child,PRODUCT NAME,PRODUCT NAME,inter_identical
+entity_69,OC-ORACLE,entity_160,OC-MYSQL,Product Unit / Buy Price,Child,UNIT PRICE,BUY PRICE,inter_identical
+entity_70,OC-ORACLE,entity_158,OC-MYSQL,Product Details,Child,PRODUCT DETAILS,PRODUCT DESCRIPTION,inter_identical
+entity_70,OC-ORACLE,entity_177,OC-SAP,Product Details,Child,PRODUCT DETAILS,PRODUCT DESCRIPTION,inter_identical
+entity_158,OC-MYSQL,entity_177,OC-SAP,Product Details,Child,PRODUCT DESCRIPTION,PRODUCT DESCRIPTION,inter_identical
+entity_155,OC-MYSQL,entity_180,OC-SAP,Product Line Name,Child,PRODUCT LINE,LINE NAME,inter_identical
+entity_152,OC-MYSQL,entity_147,OC-MYSQL,Products Satelite Join Productlines,Parent,PRODUCTS,PRODUCTLINES,intra_joined
+entity_155,OC-MYSQL,entity_148,OC-MYSQL,Products Satelite Join Productlines Child,Child,PRODUCT LINE,PRODUCT LINE,intra_joined
+entity_71,OC-ORACLE,entity_151,OC-MYSQL,Product Image,Child,PRODUCT IMAGE,IMAGE,inter_sub_typed
+entity_149,OC-MYSQL,entity_181,OC-SAP,Product Line Description,Child,TEXT DESCRIPTION,LINE DESCRIPTION,inter_identical
+entity_66,OC-ORACLE,entity_48,OC-ORACLE,Products Satelite Join Inventory,Parent,PRODUCTS,INVENTORY,intra_joined
+entity_67,OC-ORACLE,entity_51,OC-ORACLE,Products Satelite Join Inventory Child,Child,PRODUCT ID,PRODUCT ID,intra_joined
+entity_52,OC-ORACLE,entity_159,OC-MYSQL,Product Inventory,Child,PRODUCT INVENTORY,QUANTITY IN STOCK,inter_identical
+entity_52,OC-ORACLE,entity_183,OC-SAP,Product Inventory,Child,PRODUCT INVENTORY,CAPACITY,inter_identical
+entity_159,OC-MYSQL,entity_183,OC-SAP,Product Inventory,Child,QUANTITY IN STOCK,CAPACITY,inter_identical
+entity_60,OC-ORACLE,entity_134,OC-MYSQL,Orders,Parent,ORDERS,ORDERS,inter_sub_typed
+entity_60,OC-ORACLE,entity_185,OC-SAP,Orders,Parent,ORDERS,CUSTOMER ORDER,inter_sub_typed
+entity_134,OC-MYSQL,entity_185,OC-SAP,Orders,Parent,ORDERS,CUSTOMER ORDER,inter_sub_typed
+entity_61,OC-ORACLE,entity_135,OC-MYSQL,Order ID,Child,ORDER ID,ORDER NUMBER,inter_identical
+entity_61,OC-ORACLE,entity_186,OC-SAP,Order ID,Child,ORDER ID,ORDER ID,inter_identical
+entity_135,OC-MYSQL,entity_186,OC-SAP,Order ID,Child,ORDER NUMBER,ORDER ID,inter_identical
+entity_62,OC-ORACLE,entity_136,OC-MYSQL,Order Datetime,Child,ORDER DATE TIME,ORDER DATE,inter_identical
+entity_63,OC-ORACLE,entity_141,OC-MYSQL,Order Customer ID,Child,CUSTOMER ID,CUSTOMER NUMBER,inter_identical
+entity_63,OC-ORACLE,entity_188,OC-SAP,Order Customer ID,Child,CUSTOMER ID,CUSTOMER ID,inter_identical
+entity_141,OC-MYSQL,entity_188,OC-SAP,Order Customer ID,Child,CUSTOMER NUMBER,CUSTOMER ID,inter_identical
+entity_64,OC-ORACLE,entity_139,OC-MYSQL,Order Status,Child,ORDER STATUS,STATUS,inter_identical
+entity_53,OC-ORACLE,entity_128,OC-MYSQL,Order Items,Parent,ORDER ITEMS,ORDER DETAILS,inter_sub_typed
+entity_60,OC-ORACLE,entity_53,OC-ORACLE,Order Satelite Join Order Items,Parent,ORDERS,ORDER ITEMS,intra_joined
+entity_61,OC-ORACLE,entity_54,OC-ORACLE,Order Satelite Join Order Items Child,Child,ORDERS ORDER ID,ORDER ITEMS ORDER ID,intra_joined
+entity_134,OC-MYSQL,entity_128,OC-MYSQL,Order Satelite Join  Order Items,Parent,ORDERS,ORDER DETAILS,intra_joined
+entity_135,OC-MYSQL,entity_129,OC-MYSQL,Order Satelite Join Order Items Child,Child,"ORDER ORDER NUMBER	","ORDER DETAILS ORDER NUMBER	",intra_joined
+entity_54,OC-ORACLE,entity_129,OC-MYSQL,Order Details Order ID,Child,ORDER ID,ORDER NUMBER,inter_identical
+entity_55,OC-ORACLE,entity_133,OC-MYSQL,Order Details Line Item ID,Child,LINE ITEM ID,ORDER LINE NUMBER,inter_identical
+entity_55,OC-ORACLE,entity_175,OC-SAP,Order Details Line Item ID,Child,LINE ITEM ID,LINE ID,inter_identical
+entity_133,OC-MYSQL,entity_175,OC-SAP,Order Details Line Item ID,Child,ORDER LINE NUMBER,LINE ID,inter_identical
+entity_56,OC-ORACLE,entity_130,OC-MYSQL,Order Details Product ID,Child,PRODUCT ID,PRODUCT CODE,inter_identical
+entity_57,OC-ORACLE,entity_132,OC-MYSQL,Order Details Unit Price,Child,UNIT PRICE,PRICE EACH,inter_identical
+entity_57,OC-ORACLE,entity_201,OC-SAP,Order Details Unit Price,Child,UNIT PRICE,UNIT COST,inter_identical
+entity_132,OC-MYSQL,entity_201,OC-SAP,Order Details Unit Price,Child,PRICE EACH,UNIT COST,inter_identical
+entity_58,OC-ORACLE,entity_131,OC-MYSQL,Order Quantity,Child,QUANTITY,QUANTITY ORDERED,inter_identical
+entity_58,OC-ORACLE,entity_204,OC-SAP,Order Quantity,Child,QUANTITY,QUANTITY ORDERED,inter_identical
+entity_131,OC-MYSQL,entity_204,OC-SAP,Order Quantity,Child,QUANTITY ORDERED,QUANTITY ORDERED,inter_identical
+entity_109,OC-MYSQL,entity_10,HR-ORACLE,Employee,Parent,EMPLOYEES,EMPLOYEES,inter_sub_typed
+entity_185,OC-SAP,entity_10,HR-ORACLE,Employee,Parent,CUSTOMER ORDER,EMPLOYEES,inter_sub_typed
+entity_10,HR-ORACLE,entity_28,HR-ORACLE,Employee Satelite Join Jobs,Parent,EMPLOYEES,JOBS,intra_joined
+entity_17,HR-ORACLE,entity_29,HR-ORACLE,Employee Satelite Join Jobs Child,Child,JOB ID,JOB ID,intra_joined
+entity_110,OC-MYSQL,entity_11,HR-ORACLE,Employee ID,Child,EMPLOYEE NUMBER,EMPLOYEE ID,inter_identical
+entity_189,OC-SAP,entity_11,HR-ORACLE,Employee ID,Child,EMPLOYEE ID,EMPLOYEE ID,inter_identical
+entity_112,OC-MYSQL,entity_12,HR-ORACLE,Employee First Name,Child,FIRST NAME,FIRST NAME,inter_identical
+entity_111,OC-MYSQL,entity_13,HR-ORACLE,Employee Last Name,Child,LASTNAME,LAST NAME,inter_identical
+entity_114,OC-MYSQL,entity_14,HR-ORACLE,Employee Mail,Child,EMAIL,EMAIL,inter_identical
+entity_116,OC-MYSQL,entity_20,HR-ORACLE,Employee ReportsTo / Manager,Child,REPORTS TO,MANAGER ID,inter_identical
+entity_115,OC-MYSQL,entity_21,HR-ORACLE,Employee Department ID,Child,OFFICE CODE,DEPARTMENT ID,inter_identical
+entity_117,OC-MYSQL,entity_30,HR-ORACLE,Employee Title,Child,JOB TITLE,JOB TITLE,inter_identical
+entity_118,OC-MYSQL,entity_5,HR-ORACLE,Office,Parent,OFFICES,DEPARTMENTS,inter_sub_typed
+entity_5,HR-ORACLE,entity_33,HR-ORACLE,Departments Satelite Join Locations,Parent,DEPARTMENTS,LOCATIONS,intra_joined
+entity_9,HR-ORACLE,entity_34,HR-ORACLE,Departments Satelite Join Locations Child,Child,"DEPARTMENTS LOCATION ID	",LOCATIONS LOCATION ID,intra_joined
+entity_33,HR-ORACLE,entity_1,HR-ORACLE,Locations Satelite Join Countries,Parent,LOCATIONS,COUNTRIES,intra_joined
+entity_39,HR-ORACLE,entity_2,HR-ORACLE,Locations Satelite Join Countries Child,Child,LOCATIONS COUNTRY ID,COUNTRIES COUNTRY ID,intra_joined
+entity_1,HR-ORACLE,entity_40,HR-ORACLE,Countries Satelite Join Regions,Parent,COUNTRIES,REGIONS,intra_joined
+entity_4,HR-ORACLE,entity_41,HR-ORACLE,Countries Satelite Join Regions Child,Child,"COUNTRIES REGION ID	","LOCATIONS REGION ID	",intra_joined
+entity_119,OC-MYSQL,entity_6,HR-ORACLE,Office Department ID,Child,OFFICE CODE,DEPARTMENT ID,inter_identical
+entity_122,OC-MYSQL,entity_35,HR-ORACLE,Office Street,Child,ADDRESS LINE 1,STREET ADDRESS,inter_sub_typed
+entity_123,OC-MYSQL,entity_35,HR-ORACLE,Office Street,Child,ADDRESS LINE 2,STREET ADDRESS,inter_sub_typed
+entity_126,OC-MYSQL,entity_36,HR-ORACLE,Office ZIP,Child,POSTAL CODE,POSTAL CODE,inter_identical
+entity_120,OC-MYSQL,entity_37,HR-ORACLE,Office City Name,Child,CITY,CITY,inter_identical
+entity_124,OC-MYSQL,entity_38,HR-ORACLE,Office State Name,Child,STATE,STATE PROVINCE,inter_identical
+entity_125,OC-MYSQL,entity_3,HR-ORACLE,Office Country Name,Child,COUNTRY,COUNTRY NAME,inter_identical
+entity_127,OC-MYSQL,entity_42,HR-ORACLE,Office Region Name,Child,TERRITORY,REGION NAME,inter_identical
